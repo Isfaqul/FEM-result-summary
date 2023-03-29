@@ -1,4 +1,25 @@
-import data from "./data.json" assert { type: "json" };
+let data = [
+  {
+    category: "Reaction",
+    score: 81,
+    icon: "./assets/images/icon-reaction.svg",
+  },
+  {
+    category: "Memory",
+    score: 75,
+    icon: "./assets/images/icon-memory.svg",
+  },
+  {
+    category: "Verbal",
+    score: 65,
+    icon: "./assets/images/icon-verbal.svg",
+  },
+  {
+    category: "Visual",
+    score: 72,
+    icon: "./assets/images/icon-visual.svg",
+  },
+];
 
 let reactionEl = document.getElementById("reaction");
 let memoryEl = document.getElementById("memory");
