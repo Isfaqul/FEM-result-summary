@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <script type="module" src="app.js" defer></script>
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
@@ -25,7 +25,7 @@
         <section class="section section-1">
           <p class="title-result">Your Result</p>
           <div class="circle">
-            <h1 class="achieved-score">76</h1>
+            <h1 class="achieved-score" id="total">0</h1>
             <p class="of-total-score">of 100</p>
           </div>
           <h2 class="comment-main">Great</h2>
@@ -42,7 +42,7 @@
                 <p class="component-title component-title-reaction">Reaction</p>
               </div>
               <p class="category-score">
-                <span class="txt-dark">80</span> / 100
+                <span class="txt-dark" id="reaction">80</span> / 100
               </p>
             </div>
             <div class="score-component score-memory">
@@ -51,7 +51,7 @@
                 <p class="component-title component-title-memory">Memory</p>
               </div>
               <p class="category-score">
-                <span class="txt-dark">92</span> / 100
+                <span class="txt-dark" id="memory">92</span> / 100
               </p>
             </div>
             <div class="score-component score-verbal">
@@ -60,7 +60,7 @@
                 <p class="component-title component-title-verbal">Verbal</p>
               </div>
               <p class="category-score">
-                <span class="txt-dark">61</span> / 100
+                <span class="txt-dark" id="verbal">61</span> / 100
               </p>
             </div>
             <div class="score-component score-visual">
@@ -69,7 +69,7 @@
                 <p class="component-title component-title-visual">Visual</p>
               </div>
               <p class="category-score">
-                <span class="txt-dark">72</span> / 100
+                <span class="txt-dark" id="visual">72</span> / 100
               </p>
             </div>
           </div>
