@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-main-card">
+        <section class="section section-1">
+          <p class="title-result">Your Result</p>
+          <div class="circle">
+            <h1 class="achieved-score">76</h1>
+            <p class="of-total-score">of 100</p>
+          </div>
+          <h2 class="comment-main">Great</h2>
+          <p class="score-description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+        <section class="section section-2">
+          <p class="title-summary">Summary</p>
+          <div class="container-score-components">
+            <div class="score-component score-reaction">
+              <div class="container-component-title">
+                <img src="assets/images/icon-reaction.svg" alt="" />
+                <p class="component-title component-title-reaction">Reaction</p>
+              </div>
+              <p class="category-score">
+                <span class="txt-dark">80</span> / 100
+              </p>
+            </div>
+            <div class="score-component score-memory">
+              <div class="container-component-title">
+                <img src="assets/images/icon-memory.svg" alt="" />
+                <p class="component-title component-title-memory">Memory</p>
+              </div>
+              <p class="category-score">
+                <span class="txt-dark">92</span> / 100
+              </p>
+            </div>
+            <div class="score-component score-verbal">
+              <div class="container-component-title">
+                <img src="assets/images/icon-verbal.svg" alt="" />
+                <p class="component-title component-title-verbal">Verbal</p>
+              </div>
+              <p class="category-score">
+                <span class="txt-dark">61</span> / 100
+              </p>
+            </div>
+            <div class="score-component score-visual">
+              <div class="container-component-title">
+                <img src="assets/images/icon-visual.svg" alt="" />
+                <p class="component-title component-title-visual">Visual</p>
+              </div>
+              <p class="category-score">
+                <span class="txt-dark">72</span> / 100
+              </p>
+            </div>
+          </div>
+          <button class="btn" type="submit">Continue</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

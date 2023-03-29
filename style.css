@@ -1,0 +1,229 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-slate-blue: #7857ff;
+  --light-royal-blue: #2e2be9;
+  --violet-blue: #4e21ca;
+  --persian-blue: #2421ca00;
+  --white: #fff;
+  --pale-blue: hsl(221, 100%, 96%);
+  --ight-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container-main-card {
+  background-color: var(--white);
+}
+
+.section-1 {
+  text-align: center;
+  background: linear-gradient(
+    183.14deg,
+    var(--light-slate-blue) -18.38%,
+    var(--light-royal-blue) 98.27%
+  );
+
+  border-radius: 0 0 3.2em 3.2em;
+  padding: 2.4em 5.7em 4.1em 5.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-result {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.circle {
+  padding: 2.3em 4em;
+  border-radius: 100em;
+  background: linear-gradient(179.32deg, #4e21ca 1.17%, #4535f2 100%);
+  margin: 2.3em auto 2.7em auto;
+}
+
+.achieved-score {
+  font-size: 5.5rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.of-total-score {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.comment-main {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.score-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0.25em;
+}
+
+.section-2 {
+  padding: 2.5em 3em 3em 3em;
+}
+
+.title-summary {
+  font-size: 1.8rem;
+  font-weight: 5 00;
+  color: var(--dark-gray-blue);
+}
+
+.container-score-components {
+  margin: 2.3em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+
+.container-component-title {
+  display: flex;
+}
+
+.score-component {
+  border-radius: 1em;
+  padding: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-reaction {
+  color: var(--light-red);
+  background-color: #fff6f5;
+}
+
+.score-memory {
+  color: var(--orangey-yellow);
+  background: #fffbf2;
+}
+
+.score-verbal {
+  color: var(--green-teal);
+  background: #f2fbfa;
+}
+
+.score-visual {
+  color: var(--cobalt-blue);
+  background: #f3f3fd;
+}
+
+.component-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 0.667em;
+}
+
+.category-score {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #303b5a9d;
+}
+
+.category-score .txt-dark {
+  color: var(--dark-gray-blue);
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 2.8em;
+  border: none;
+  color: var(--white);
+  background-color: var(--dark-gray-blue);
+  padding: 0.889em;
+  width: 100%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.btn:hover {
+  background: var(--violet-blue);
+  transition: all 50ms ease-in-out;
+}
+
+.btn:active {
+  background-color: var(--dark-gray-blue);
+}
+
+@media (min-width: 840px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  .container-main-card {
+    display: flex;
+    border-radius: 3.5em;
+    overflow: hidden;
+    max-width: 735px;
+    box-shadow: 9px 25px 83px rgba(69, 53, 242, 0.15);
+  }
+  .section-1 {
+    padding: 4em 5.7em 5.7em 5.7em;
+    border-radius: 0 3.5em 3.5em 0;
+    flex: 1;
+  }
+  .section-2 {
+    flex: 1;
+    padding: 5.2em 4em 3.2em 4em;
+  }
+  .title-result {
+    font-size: 2.2rem;
+  }
+  .circle {
+    margin: 3.6em auto 2.9em auto;
+    padding: 4.3em 6.1em;
+  }
+  .achieved-score {
+    font-size: 7rem;
+  }
+  .of-total-score {
+    font-size: 1.8rem;
+  }
+  .comment-main {
+    font-size: 3.2rem;
+  }
+  .score-description {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-top: 0.765em;
+  }
+  .title-summary {
+    font-size: 2.4rem;
+  }
+  .container-score-components {
+    margin: 2.7em auto 4.2em auto;
+  }
+} ;
